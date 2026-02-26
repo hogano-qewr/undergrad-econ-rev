@@ -1,6 +1,5 @@
 library(tidyverse)
 
-
 ### 2. The R Lab: Simulating the "Volcker Shock"
 #       We will simulate a central bank that tries to "buy" lower unemployment with inflation, 
 #         only to find that expectations shift the curve against them.
@@ -35,8 +34,6 @@ ggplot(df_pc, aes(x = u)) +
   theme_minimal() +
   theme(legend.position = "bottom")
 
-git_add(.)
-git_commit("NAIRU, expectations-aug Phillips, Volcker Shock")
-git_push()
+
 
 
