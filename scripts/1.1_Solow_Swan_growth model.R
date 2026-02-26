@@ -41,7 +41,3 @@ plot(df_growth$year, df_growth$gdp, type="l", col="darkgreen", lwd=2,
 abline(h = (s/delta)^(alpha/(1-alpha)), col="red", lty=2)
 text(80, 1.8, "Steady State", col="red")
 
-
-git_add(".")
-git_commit("Add Solow-Swan Growth Simulation")
-git_push()
