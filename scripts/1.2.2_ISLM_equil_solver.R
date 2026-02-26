@@ -2,7 +2,7 @@ library(tidyverse)
 library(shiny)
 library(bslib)
 
-### CALCULATION ENGINE: SCARTH IS-LM
+## CALCULATION ENGINE: SCARTH IS-LM
 
 
 # 1. Define the Structural Parameters (Scarth's Sensitivity Coefficients)
