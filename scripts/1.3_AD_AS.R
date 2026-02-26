@@ -51,7 +51,4 @@ ggplot(df_adas, aes(x = Y)) +
   theme_minimal() +
   theme(legend.position = "bottom")
 
-library(gert)
-git_add(".")
-git_commit("Add AD-AS Stagflation Simulation Lab")
-git_push()
+
