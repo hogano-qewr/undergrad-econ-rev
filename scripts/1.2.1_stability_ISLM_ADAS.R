@@ -1,11 +1,9 @@
-
+library(tidyverse)
 
 # SCARTH CHAPTER 2
 
 # The R "Stability Lab": Simulating a Market Shock
 #   We can use R to see if a market "heals" itself or "explodes" after a shock.
-
-library(tidyverse)
 
 # 1. Define a Dynamic Price Adjustment Function
 # Price tomorrow = Price today + lambda * (Excess Demand)
@@ -36,28 +34,10 @@ ggplot(df_stability, aes(x = step, y = price)) +
   theme_minimal()
 
 
-library(gert)
-git_add(".")
-git_commit("Add Market Stability and Convergence Simulation (Scarth Ch 2)")
-git_push()
-
-library(gert)
-
-# 1. Pull the changes from GitHub and 'stack' your R work on top of them
-# This incorporates the README/License changes into your local history
-git_pull(rebase = TRUE)
-
-# 2. Now try the Push again
-git_push()
-
-
-
 # The R Lab: Simulating the AD-AS Convergence
 #   We will simulate a Fiscal Expansion (Government spending rises). We'll watch how 
 #     the "Excess Demand" created by the policy slowly pushes the Price Level up until 
 #     the market "heals" at a new, higher equilibrium.
-
-library(tidyverse)
 
 # 1. Setup Parameters
 lambda <- 0.05    # Speed of Price Adjustment (The 'Scarth' Parameter)
@@ -98,8 +78,6 @@ ggplot(df_path, aes(x = time, y = price)) +
 
 
 # A market that fails to heal itself
-
-library(tidyverse)
 
 # 1. Setup an UNSTABLE market
 # We make lambda (speed of adjustment) too high (0.3 instead of 0.05)
