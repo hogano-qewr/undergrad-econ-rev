@@ -43,8 +43,4 @@ ggplot(df_islm, aes(x = Y)) +
   theme_minimal() +
   theme(legend.position = "bottom") # Legend at bottom so it doesn't block the 'X'
 
-library(gert)
-git_add(".")
-git_commit("Fix IS-LM plot legend and update coordinates")
-git_push()
 
